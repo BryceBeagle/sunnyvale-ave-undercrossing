@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sunnyvale-ave-travel-times"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "sunnyvale_ave_travel_times" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"  # locked max to support pandas-stubs
+googlemaps = "^4.6.0"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+pandas-stubs = "^1.5.0.220926"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
